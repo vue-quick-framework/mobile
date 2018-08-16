@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    baseUrl: 'http://localhost:3000'
+  },
   /*
   ** Headers of the page
   */
@@ -21,6 +24,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: [
+      'babel-polyfill',
+      // "jquery/dist/jquery.min.js",
+    ],
     /*
     ** Run ESLint on save
     */

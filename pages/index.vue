@@ -26,6 +26,9 @@
 import AppLogo from '~/components/AppLogo.vue'
 
 export default {
+  mounted () {
+    console.log(process.env.baseUrl)
+  },
   components: {
     AppLogo
   }
